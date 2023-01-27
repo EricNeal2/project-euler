@@ -31,3 +31,11 @@ def get_factors(n):
             if i**2 != n:
                 all_factors.append(n//i)
     return all_factors
+
+
+def compute_factorial(n):
+    '''Computes the factorial of the whole number n'''
+    total = 1
+    for i in range(n,1,-1):
+        total *= i
+    return total
